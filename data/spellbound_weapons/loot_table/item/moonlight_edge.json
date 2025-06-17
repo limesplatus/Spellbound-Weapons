@@ -20,7 +20,7 @@
                   },
                   "enchantment_glint_override": true,
                 
-                 "attribute_modifiers": [],
+                
  "item_name": {"translate":"Moonlight Edge","color":"#9d64ed","italic":false},
 
                   "lore": [ [{"translate":"Grindstone Repair: ","color":"gray","italic": false}],[{"translate":"  ","color":"gray","italic": false},{"color":"blue","italic": false,"translate":"item.minecraft.diamond_sword"}],{"translate":"Spellbound Weapons","color":"#676e75","italic": true}]

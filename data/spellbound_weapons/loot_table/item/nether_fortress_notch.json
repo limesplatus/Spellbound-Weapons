@@ -18,7 +18,7 @@
                     "SpellboundNetherFortressNotch": 1
                   },
                 
-                 "attribute_modifiers": [],
+                
  "item_name": {"translate":"Nether Fortress Core","color":"#bcbccf","italic":false},
 
                   "lore": [ [{"translate":"A core essential for creating nether swords","color":"gray","italic": false}],[{"text":""}],[{"translate":"Creating a ","color":"gray","italic": false},{"translate":"Witherblade","color":"gray","italic": false}],[{"translate":"  Drop this core on top of a crafting table","color":"blue","italic": false}],[{"translate":"  block with a diamond sword + soul sand block","color":"blue","italic": false}],[{"text":""}],[{"translate":"Creating a ","color":"gray","italic": false},{"translate":"Blazeblade","color":"gray","italic": false}],[{"translate":"  Drop this core on top of a crafting table","color":"blue","italic": false}],[{"translate":"  block with an iron sword + blaze powder","color":"blue","italic": false}],[{"text":""}],[{"translate":"Spellbound Weapons","color":"#676e75","italic": true}]]

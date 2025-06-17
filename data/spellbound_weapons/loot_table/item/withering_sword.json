@@ -19,7 +19,7 @@
                     "SpellboundWithering": 1
                   },
                 
-                 "attribute_modifiers": [],
+                
  "item_name": {"translate":"Witherblade","color":"#7f7aa1","italic":false},
 
                   "lore": [ [{"translate":"Grindstone Repair: ","color":"gray","italic": false}],[{"translate":"  ","color":"gray","italic": false},{"color":"blue","italic": false,"translate":"item.minecraft.diamond_sword"}],{"translate":"Spellbound Weapons","color":"#676e75","italic": true}]

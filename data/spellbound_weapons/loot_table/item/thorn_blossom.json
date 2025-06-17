@@ -21,7 +21,7 @@
                   
                   "max_damage": 320,
                 
-                 "attribute_modifiers": [],
+                
  "item_name": {"translate":"Thorn Blossom","color":"#c0e3b3","italic":false},
 
                   "lore": [ [{"translate":"Grindstone Repair: ","color":"gray","italic": false}],[{"translate":"  ","color":"gray","italic": false},{"color":"blue","italic": false,"translate":"item.minecraft.iron_sword"}],{"translate":"Spellbound Weapons","color":"#676e75","italic": true}]
