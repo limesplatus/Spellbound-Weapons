@@ -1,5 +1,5 @@
 
-execute unless data storage vanilla_refresh_config:config config{load_message:0} unless score load_message refresh_settings matches ..0 run tellraw @a [{"translate": "Successfully loaded","color": "gray"},{"translate": " Spellbound Weapons v4.1.4","color": "green"}]
+execute unless data storage vanilla_refresh_config:config config{load_message:0} unless score load_message refresh_settings matches ..0 run tellraw @a [{"translate": "Successfully loaded","color": "gray"},{"translate": " Spellbound Weapons v4.1.6","color": "green"}]
 
 scoreboard objectives add refresh_settings dummy
 
@@ -132,7 +132,8 @@ scoreboard objectives add spellbound_echo_wand_cooldown dummy
 
 
 
-scoreboard objectives add spellbound_sneak_count dummy
+scoreboard objectives add spellbound_bone_wand_sneak_count dummy
+scoreboard objectives add spellbound_bone_wand_sneak_timer dummy
 
 scoreboard objectives add spellbound_posY dummy
 scoreboard objectives add spellbound_count2 dummy
@@ -200,6 +201,11 @@ schedule function spellbound_weapons:tick_clocks/5tick 5t
 
 schedule function spellbound_weapons:tick_clocks/10tick 10t
 
+scoreboard objectives add spellbound_installed dummy
 
+### check installs
+
+scoreboard players set unbound_items spellbound_installed 0
+execute store result score unbound_items spellbound_installed run function unbound:installed
 
 function spellbound_weapons:other/action/default_settings

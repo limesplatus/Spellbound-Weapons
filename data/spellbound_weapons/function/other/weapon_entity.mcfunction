@@ -2,7 +2,6 @@
 
 #these are for markers, a good chunk of the datapack still uses area of effect clouds as invisibile entities /:
 
-execute if entity @s[tag=spellbound_marker_vault] run function spellbound_weapons:chest_insert/vault/vault_marker
 
 execute if entity @s[tag=spellbound_blowgun_arrow_raycast] run function spellbound_weapons:blowgun/dart
 

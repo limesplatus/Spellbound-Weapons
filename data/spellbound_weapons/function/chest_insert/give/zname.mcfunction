@@ -1,0 +1,1 @@
+$give @s chest[minecraft:container_loot={loot_table:"$(loot)"}]

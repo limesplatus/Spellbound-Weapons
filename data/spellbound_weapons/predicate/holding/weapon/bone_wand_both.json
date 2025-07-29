@@ -1,0 +1,35 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "predicates": {
+              "custom_data": {
+                "SpellboundBoneWand": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "offhand": {
+            "predicates": {
+              "custom_data": {
+                "SpellboundBoneWand": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

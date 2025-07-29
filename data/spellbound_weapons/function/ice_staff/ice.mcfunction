@@ -21,7 +21,7 @@ execute positioned ~ ~ ~ if entity @e[distance=..4,type=ender_dragon] unless sco
 
 
 #particles
-execute run particle snowflake ~ ~.62 ~ .2 .2 .2 .05 1 force @a[distance=..32]
+particle snowflake ~ ~.62 ~ .2 .2 .2 .05 1 force @a[distance=..32]
 
 #hit
 execute if score @s spellbound_count matches 3..120 if entity @e[distance=..4,dy=0,predicate=!spellbound_weapons:not_creative_spec,type=!#spellbound_weapons:misc,type=!slime,type=!magma_cube] run function spellbound_weapons:ice_staff/break_ice

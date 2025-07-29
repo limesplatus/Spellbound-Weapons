@@ -1,19 +1,20 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:player_generates_container_loot",
-        "conditions": {
-          "player":
-          [{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "player": [
+          {
             "condition": "reference",
-            "name":"spellbound_weapons:weapons_achieveable" 
-          }],
-          "loot_table": "minecraft:chests/ancient_city"
-        }
+            "name": "spellbound_weapons:weapons_achieveable"
+          },
+          {
+            "condition": "reference",
+            "name": "spellbound_weapons:uninstalled_unbound"
+          }
+        ],
+        "loot_table": "minecraft:chests/ancient_city"
       }
-    },
-    "rewards": {
-      "function": "spellbound_weapons:chest_insert/raycast/ancient_city"
     }
   }
-  
+}

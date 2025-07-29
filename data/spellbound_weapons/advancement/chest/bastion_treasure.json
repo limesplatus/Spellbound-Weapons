@@ -12,9 +12,6 @@
         }
       }
     },
-    "rewards": {
-      "function": "spellbound_weapons:chest_insert/raycast/bastion"
-    },
     "parent": "spellbound_weapons:chest/bastion_other"
   }
   

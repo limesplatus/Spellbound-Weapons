@@ -14,7 +14,9 @@
                   "custom_model_data": {
                                   "floats": [47019]},
 
+                  
                   "custom_data": {
+                    "SpellboundRanged": 1,
                     "SpellboundItem": 1,
                     "SpellboundBoneWand": 1
                   },

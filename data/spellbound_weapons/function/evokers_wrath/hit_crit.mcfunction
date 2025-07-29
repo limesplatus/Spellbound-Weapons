@@ -1,14 +1,14 @@
 
-execute run summon evoker_fangs ~ ~ ~ {Tags:["spellbound_temp_uuid","spellbound_fangs"]}
-execute run summon evoker_fangs ~ ~ ~1.0 {Tags:["spellbound_temp_uuid","spellbound_fangs"]}
-execute run summon evoker_fangs ~ ~ ~-1.0 {Tags:["spellbound_temp_uuid","spellbound_fangs"]}
-execute run summon evoker_fangs ~1.0 ~ ~ {Tags:["spellbound_temp_uuid","spellbound_fangs"]}
-execute run summon evoker_fangs ~-1.0 ~ ~ {Tags:["spellbound_temp_uuid","spellbound_fangs"]}
+summon evoker_fangs ~ ~ ~ {Tags:["spellbound_temp_uuid","spellbound_fangs"]}
+summon evoker_fangs ~ ~ ~1.0 {Tags:["spellbound_temp_uuid","spellbound_fangs"]}
+summon evoker_fangs ~ ~ ~-1.0 {Tags:["spellbound_temp_uuid","spellbound_fangs"]}
+summon evoker_fangs ~1.0 ~ ~ {Tags:["spellbound_temp_uuid","spellbound_fangs"]}
+summon evoker_fangs ~-1.0 ~ ~ {Tags:["spellbound_temp_uuid","spellbound_fangs"]}
 
-execute run summon marker ~1.0 ~ ~1.0 {Tags:["spellbound_evokerattack","spellbound_temp","spellbound_marker","spellbound_evokerattack_crit"]}
-execute run summon marker ~-1.0 ~ ~-1.0 {Tags:["spellbound_evokerattack","spellbound_temp","spellbound_marker","spellbound_evokerattack_crit"]}
-execute run summon marker ~1.0 ~ ~-1.0 {Tags:["spellbound_evokerattack","spellbound_temp","spellbound_marker","spellbound_evokerattack_crit"]}
-execute run summon marker ~-1.0 ~ ~1.0 {Tags:["spellbound_evokerattack","spellbound_temp","spellbound_marker","spellbound_evokerattack_crit"]}
+summon marker ~1.0 ~ ~1.0 {Tags:["spellbound_evokerattack","spellbound_temp","spellbound_marker","spellbound_evokerattack_crit"]}
+summon marker ~-1.0 ~ ~-1.0 {Tags:["spellbound_evokerattack","spellbound_temp","spellbound_marker","spellbound_evokerattack_crit"]}
+summon marker ~1.0 ~ ~-1.0 {Tags:["spellbound_evokerattack","spellbound_temp","spellbound_marker","spellbound_evokerattack_crit"]}
+summon marker ~-1.0 ~ ~1.0 {Tags:["spellbound_evokerattack","spellbound_temp","spellbound_marker","spellbound_evokerattack_crit"]}
 
 execute if predicate spellbound_weapons:holding/enchant/sweeping_edge3 run summon marker ~ ~ ~2 {Tags:["spellbound_evokerattack","spellbound_temp2","spellbound_marker","spellbound_evokerattack_crit"]}
 execute if predicate spellbound_weapons:holding/enchant/sweeping_edge3 run summon marker ~ ~ ~-2 {Tags:["spellbound_evokerattack","spellbound_temp2","spellbound_marker","spellbound_evokerattack_crit"]}
@@ -57,4 +57,4 @@ playsound minecraft:entity.vex.hurt ambient @a[distance=..20] ~ ~ ~ 1 .5
 execute as @s[tag=spellbound_tip.evokers_wrath_2,tag=!spellbound_tip.evokers_wrath_3] run function spellbound_weapons:other/tips/checkmark
 tag @s[tag=spellbound_tip.evokers_wrath_2] add spellbound_tip.evokers_wrath_3
 
-execute run scoreboard players set @s[scores={spellbound_evoker=1..}] spellbound_evoker_cooldown 0
+scoreboard players set @s[scores={spellbound_evoker=1..}] spellbound_evoker_cooldown 0

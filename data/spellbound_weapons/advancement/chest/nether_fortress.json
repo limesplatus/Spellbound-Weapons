@@ -11,9 +11,6 @@
           "loot_table": "minecraft:chests/nether_bridge"
         }
       }
-    },
-    "rewards": {
-      "function": "spellbound_weapons:chest_insert/raycast/nether_fortress"
     }
   }
   

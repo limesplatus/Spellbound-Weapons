@@ -100,7 +100,6 @@ execute as @e[type=#spellbound_weapons:arrow,tag=spellbound_magmus_charger_arrow
 
 execute as @e[type=#spellbound_weapons:fish,tag=spellbound_cursedfish] at @s run function spellbound_weapons:cursed_sea_blade/the_actual_thing_is_cursed
 
-scoreboard players add @e[type=area_effect_cloud,tag=spellbound_bone_wand_area] spellbound_count 1
 
 #areas
 execute as @e[type=area_effect_cloud,tag=spellbound_magmus_charger_arrow_area_mid] at @s unless entity @e[tag=spellbound_magmus_charger_arrow,distance=..5] at @e[distance=..5,type=!#spellbound_weapons:misc,sort=nearest,limit=1,nbt={HurtTime:10s}] run function spellbound_weapons:magmus_charger/arrow/medium_arrow_hit
@@ -184,3 +183,5 @@ execute as @a[scores={spellbound_death=1..}] run function spellbound_weapons:oth
 scoreboard players set @a spellbound_jump 0
 
 execute as @a[predicate=spellbound_weapons:holding/spellbound_sword] at @s run function spellbound_weapons:extra_weapons/spellbound_sword
+
+execute as @a[predicate=spellbound_weapons:open_spellbound_loot_chest] at @s run function spellbound_weapons:chest_insert/open_chest

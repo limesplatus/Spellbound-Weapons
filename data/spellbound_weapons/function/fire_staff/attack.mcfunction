@@ -2,7 +2,7 @@
 
 
 
-execute run playsound item.firecharge.use player @a[distance=..32] ~ ~ ~ 1 1
+playsound item.firecharge.use player @a[distance=..32] ~ ~ ~ 1 1
 
 
 execute as @s[predicate=!spellbound_weapons:holding/enchant/luck_of_the_sea3,predicate=spellbound_weapons:holding/weapon/fire_staff] run summon marker ^ ^ ^ {Tags:["","spellbound_firestaff","spellbound_marker"],NoGravity:1b,Invulnerable:1b}
@@ -11,7 +11,7 @@ execute as @s[predicate=spellbound_weapons:holding/enchant/luck_of_the_sea3,pred
 execute as @s[predicate=!spellbound_weapons:holding/enchant/luck_of_the_sea3_offhand,predicate=spellbound_weapons:holding/weapon/fire_staff_offhand] run summon marker ^ ^ ^ {Tags:["","spellbound_firestaff","spellbound_marker"],NoGravity:1b,Invulnerable:1b}
 execute as @s[predicate=spellbound_weapons:holding/enchant/luck_of_the_sea3_offhand,predicate=spellbound_weapons:holding/weapon/fire_staff_offhand] run summon marker ^ ^ ^ {Tags:["","spellbound_firestaff","spellbound_marker","spellbound_firestaff_enchanted"],NoGravity:1b,Invulnerable:1b}
 
-execute run data modify entity @e[type=marker,tag=spellbound_firestaff,sort=nearest,limit=1] Rotation set from entity @s Rotation
+data modify entity @e[type=marker,tag=spellbound_firestaff,sort=nearest,limit=1] Rotation set from entity @s Rotation
 
 execute at @s store result score @n[type=marker,tag=spellbound_firestaff] spellbound_uuid run scoreboard players get @s spellbound_uuid
 execute at @s store result score @n[type=marker,tag=spellbound_firestaff] spellbound_uuid2 run scoreboard players get @s spellbound_uuid2

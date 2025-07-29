@@ -11,9 +11,6 @@
           "loot_table": "minecraft:chests/simple_dungeon"
         }
       }
-    },
-    "rewards": {
-      "function": "spellbound_weapons:chest_insert/raycast/simple_dungeon"
     }
   }
   

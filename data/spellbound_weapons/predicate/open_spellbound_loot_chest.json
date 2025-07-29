@@ -1,0 +1,113 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type_specific": {
+          "type": "minecraft:player",
+          "advancements": {
+            "spellbound_weapons:chest/ancient_city": true
+          }
+        }
+      }
+    },
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type_specific": {
+          "type": "minecraft:player",
+          "advancements": {
+            "spellbound_weapons:chest/bastion_other": true
+          }
+        }
+      }
+    },
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type_specific": {
+          "type": "minecraft:player",
+          "advancements": {
+            "spellbound_weapons:chest/bastion_treasure": true
+          }
+        }
+      }
+    },
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type_specific": {
+          "type": "minecraft:player",
+          "advancements": {
+            "spellbound_weapons:chest/end_city_treasure": true
+          }
+        }
+      }
+    },
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type_specific": {
+          "type": "minecraft:player",
+          "advancements": {
+            "spellbound_weapons:chest/nether_fortress": true
+          }
+        }
+      }
+    },
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type_specific": {
+          "type": "minecraft:player",
+          "advancements": {
+            "spellbound_weapons:chest/pillager_outpost": true
+          }
+        }
+      }
+    },
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type_specific": {
+          "type": "minecraft:player",
+          "advancements": {
+            "spellbound_weapons:chest/simple_dungeon": true
+          }
+        }
+      }
+    },
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type_specific": {
+          "type": "minecraft:player",
+          "advancements": {
+            "spellbound_weapons:chest/village_fisher": true
+          }
+        }
+      }
+    },
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type_specific": {
+          "type": "minecraft:player",
+          "advancements": {
+            "spellbound_weapons:chest/village_weaponsmith": true
+          }
+        }
+      }
+    }
+  ]
+}

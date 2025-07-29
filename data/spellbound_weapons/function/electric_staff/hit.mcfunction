@@ -1,6 +1,6 @@
 scoreboard players add @s spellbound_count 1
 
-execute run particle wax_on ~ ~ ~ 0 0 0 0 1 force @a[distance=..64]
+particle wax_on ~ ~ ~ 0 0 0 0 1 force @a[distance=..64]
 particle large_smoke ~ ~ ~ 0 0 0 .05 5 force @a[distance=..64]
 
 playsound minecraft:entity.lightning_bolt.thunder player @a[distance=..45] ~ ~ ~ 3 2

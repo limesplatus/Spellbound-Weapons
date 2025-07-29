@@ -11,9 +11,6 @@
           "loot_table": "minecraft:chests/pillager_outpost"
         }
       }
-    },
-    "rewards": {
-      "function": "spellbound_weapons:chest_insert/raycast/pillager_outpost"
     }
   }
   

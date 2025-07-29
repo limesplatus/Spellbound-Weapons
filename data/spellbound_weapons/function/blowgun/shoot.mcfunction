@@ -1,5 +1,5 @@
-execute run tag @p[scores={spellbound_blowgun=1..}] add spellbound_player_immunetodart
-execute run tag @s add spellbound_arrow_checked2
+tag @p[scores={spellbound_blowgun=1..}] add spellbound_player_immunetodart
+tag @s add spellbound_arrow_checked2
 execute as @p[scores={spellbound_blowgun=1..}] at @s anchored eyes positioned ^ ^ ^1.5 run summon marker ~ ~ ~ {Tags:["spellbound_blowgun_arrow_raycast","spellbound_marker"]}
 
 #low charge
@@ -32,7 +32,7 @@ execute as @n[type=marker,tag=spellbound_blowgun_arrow_raycast] at @s store resu
 execute as @n[type=marker,tag=spellbound_blowgun_arrow_raycast] at @s store result entity @s Rotation[1] float 1 run data get entity @p[scores={spellbound_blowgun=1..}] Rotation[1]
 
 
-execute run playsound minecraft:item.crossbow.shoot player @a[distance=..30] ~ ~ ~ 1.5 1.5
+playsound minecraft:item.crossbow.shoot player @a[distance=..30] ~ ~ ~ 1.5 1.5
 execute anchored eyes run kill @s[type=arrow]
 
 execute as @p[scores={spellbound_blowgun=1..}] at @s run scoreboard players set @s spellbound_blowgun_cooldown 0

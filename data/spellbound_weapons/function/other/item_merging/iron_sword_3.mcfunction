@@ -1,5 +1,5 @@
 
-execute run scoreboard players add @s spellbound_count 1
+scoreboard players add @s spellbound_count 1
 
 
 

@@ -11,9 +11,6 @@
           "loot_table": "minecraft:chests/village/village_weaponsmith"
         }
       }
-    },
-    "rewards": {
-      "function": "spellbound_weapons:chest_insert/raycast/village_weaponsmith"
     }
   }
   
