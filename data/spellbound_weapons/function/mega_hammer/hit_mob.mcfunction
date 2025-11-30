@@ -4,6 +4,7 @@ playsound minecraft:block.netherite_block.break player @a[distance=..30] ~ ~ ~ 2
 
 $execute as @s[type=!player] run function spellbound_weapons:mega_hammer/move {velocity_multiplier:"$(velocity_multiplier)"}
 
+#nearby mobs
 $execute as @s[type=!player] as @e[distance=0.01..$(knockback_radius),type=!#spellbound_weapons:misc,type=!player] at @s run function spellbound_weapons:mega_hammer/move {velocity_multiplier:"$(velocity_multiplier2)"}
 
 $execute as @e[distance=0.01..$(knockback_radius),type=!#spellbound_weapons:misc,type=!player] at @s run damage @s[tag=!spellbound_usedhammer] 4 spellbound_weapons:melee_force by @p[tag=spellbound_usedhammer]

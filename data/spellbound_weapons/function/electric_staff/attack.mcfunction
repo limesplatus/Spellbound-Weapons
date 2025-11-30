@@ -6,6 +6,9 @@ execute if block ~ ~-.5 ~ water run playsound minecraft:entity.firework_rocket.l
 execute if block ~ ~-.5 ~ water run particle end_rod ~ ~1 ~ 0 0 0 .2 20 force
 execute if block ~ ~-.5 ~ water run damage @s 6 minecraft:magic
 
+
+particle wax_off ~ ~ ~ 0 0 0 15 5 force @a[distance=..128]
+
  playsound block.respawn_anchor.deplete player @a[distance=..32] ~ ~ ~ 1 1.75
 
 execute positioned ^ ^ ^1 run summon minecraft:marker ~ ~ ~ {Tags:["spellbound_electricity","spellbound_marker"]}
@@ -53,6 +56,7 @@ scoreboard players reset temp spellbound_count
 scoreboard players reset temp_mobs_hit spellbound_count
 
 tag @s remove spellbound_electric_staff_immune
+tag @e[distance=..128] remove spellbound_electric_hit
 
 execute store result score @n[type=marker,tag=spellbound_electric_raycast] spellbound_uuid run scoreboard players get @s spellbound_uuid
 execute store result score @n[type=marker,tag=spellbound_electric_raycast] spellbound_uuid2 run scoreboard players get @s spellbound_uuid2

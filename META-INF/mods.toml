@@ -5,7 +5,7 @@ showAsResourcePack = false
 
 [[mods]]
 modId = "spellbound_weapons_mr"
-version = "4.1.6"
+version = "4.1.6b"
 displayName = "Spellbound Weapons"
 description = "Adds new weapons that enhance fighting and creates new strategies to combat foes"
 logoFile = "spellbound-weapons_pack.png"

@@ -2,6 +2,10 @@
 #count how many mobs have been hit by this raycast for damage
 scoreboard players add temp_mobs_hit spellbound_count 1
 
+tag @s add spellbound_electric_hit
+
+effect give @s glowing 6 0 false
+
 #damage
 
     #damage if hit <=2 mobs

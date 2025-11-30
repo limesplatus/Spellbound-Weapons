@@ -1,9 +1,11 @@
 {
   "pack": {
+    "min_format": 71,
+    "max_format": 9999,
     "pack_format": 71,
     "supported_formats": {
       "min_inclusive": 71,
-      "max_inclusive": 999
+      "max_inclusive": 9999
     },
     "description": [
       {
@@ -11,7 +13,7 @@
         "color": "#ebff66"
       },
       {
-        "translate": " [v4.1.6]",
+        "translate": " [v4.1.6b]",
         "color": "#707070"
       },
       {
@@ -25,7 +27,26 @@
   },
   "overlays": {
     "entries": [
-        
+         {
+          "directory": "overlay-empty",
+          
+        "min_format": 48,
+        "max_format": 9999,
+          "formats": {
+            "max_inclusive": 9999,
+            "min_inclusive": 48
+          }
+        },
+        {
+          
+        "min_format": 88,
+        "max_format": 9999,
+          "directory": "1.21.9",
+          "formats": {
+            "max_inclusive": 9999,
+            "min_inclusive": 88
+          }
+        }
     ]
 }
 }
